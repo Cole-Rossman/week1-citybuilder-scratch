@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>Shrek Fight Simulator</title>
 </head>
 
 <body>
@@ -18,20 +18,45 @@
             <img src="./assets/big-logo.png" />
         </div>
     </header>
-        <h1>Dream City Builder</h1>
+        <h1>Shrek Fight Simulator</h1>
     <main>
         <section class="information">
-            <div class="select" id="climate">
-                <select id="climate-select">
-                    <option value="1">Evergreen</option>
-                    <option value="2">Subzero</option>
-                    <option value="3">Highlands</option>
-                    <option value="4">Dry</option>
+            <div class="select" id="character">
+                <select id="character-select">
+                    <option value="1">Shrek</option>
+                    <option value="2">Donkey</option>
+                    <option value="3">Fiona</option>
+                    <option value="4">Dragon</option>
                 </select>
-                <img>
+                <img id="character-image" src="./assets/character-1.png">
             </div>
 
+            <div class="select" id="environment">
+                <select id="environment-select">
+                    <option value="1">Swamp</option>
+                    <option value="2">Enchanted Forest</option>
+                    <option value="3">Far Far Away</option>
+                    <option value="4">Tower</option>
+                </select>
+                <img id="environment-image" src="./assets/environment-1.png">
+            </div>
 
+            <div class="select" id="opponent">
+                <select id="opponent-select">
+                    <option value="1">Lord Farquaad</option>
+                    <option value="2">Prince Charming</option>
+                    <option value="3">Fairy Godmother</option>
+                    <option value="4">Rumpelstiltskin</option>
+                </select>
+                <img id="opponent-image" src="./assets/opponent-1.png">
+            </div>
+        </section>
+
+        <section class="caption">
+            <h3>Who Will Win?</h3>
+            <input id="caption-input" type="text">
+            <button id="caption-button">Submit</button>
+            <div id="caption-list"></div>
         </section>
     </main>
     <footer>
