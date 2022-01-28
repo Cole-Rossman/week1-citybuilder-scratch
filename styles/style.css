@@ -61,19 +61,6 @@ header {
     box-shadow: var(--shadow);
 }
 
-
-h1 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    border: 10px black solid;
-    border-radius: 15px;
-    margin: 30px;
-
-}
-
 .gutter-right {
     margin-right: 20px;
 }

@@ -50,7 +50,7 @@ opponentSelect.addEventListener('change', (e) => {
     opponentCount++;
 
     opponentImageEl.src = `./assets/opponent-${value}.png`;
-
+    
     displayStats();
 });
 
