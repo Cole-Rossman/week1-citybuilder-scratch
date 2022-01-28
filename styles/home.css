@@ -7,12 +7,28 @@ h1 {
     border: 10px rgb(28, 218, 10) solid;
     border-radius: 15px;
     margin: 30px;
+    color: aquamarine;
 
 }
 
+header {
+    background-color: rgb(182, 99, 99);
+}
+
+footer {
+    background-color: rgb(171, 92, 92);
+}
 .information {
     display: flex;
     flex-direction: row;
+    border: 10px blanchedalmond solid;
+    border-radius: 1%;
+    background-color: rgb(247, 246, 246);
+}
+
+#character {
+    border: 8px rgb(223, 177, 27) solid;
+    border-radius: 3%;
 }
 
 #character-image {
@@ -20,9 +36,19 @@ h1 {
     height: 506px;
 }
 
+#environment {
+    border: 8px chocolate solid;
+    border-radius: 3%;
+}
+
 #environment-image {
     width: 458px;
     height: 499px;
+}
+
+#opponent {
+    border: 8px rgb(134, 35, 227) solid;
+    border-radius: 3%;
 }
 
 #opponent-image {
@@ -52,4 +78,9 @@ select {
 
 #caption-section {
     margin: -99px;
+    border: 9px rgba(243, 9, 9, 0.865) solid;
+}
+
+#caption-list {
+    padding: -43px;
 }
