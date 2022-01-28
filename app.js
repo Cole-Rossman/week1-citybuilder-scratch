@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { makeStatsString } from './utils.js';
+// import { makeStatsString } from './utils.js';
 
 const characterSelect = document.getElementById('character-select');
 const environmentSelect = document.getElementById('environment-select');
@@ -26,12 +26,20 @@ let captions = [];
 // set event listeners 
 characterSelect.addEventListener('change', (e) => {
     const value = e.target.value;
-
+    console.log(value);
     characterCount++;
 
-    characterImageEl.style.backgroundImage = `url("./assets/character-${value}.png)`;
+    characterImageEl.src = `./assets/character-${value}.png`;
 
     displayStats();
+});
+
+environmentSelect.addEventListener('change', (e) => {
+    const value = e.target.value;
+
+    environmentCount++;
+
+    environmentImageEl.src = `./assets/environment-${value}.png`;
 });
   // get user input
   // use user input to update state 
