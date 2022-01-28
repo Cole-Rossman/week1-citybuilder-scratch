@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { makeStatsString } from './utils.js';
+import { makeStatsString } from './test/utils.js';
 
 const characterSelect = document.getElementById('character-select');
 const environmentSelect = document.getElementById('environment-select');
@@ -72,6 +72,14 @@ function displayStats() {
 
 function displayCaptions() {
     captionList.textContent = '';
+
+    for (let caption of captions) {
+        const p = document.createElement('p');
+
+        p.textContent = caption;
+
+        captionList.append(p);
+    }
 }
   // get user input
   // use user input to update state 
