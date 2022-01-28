@@ -64,12 +64,6 @@ captionButton.addEventListener('click', () => {
     displayCaptions();
 });
 
-function displayStats() {
-    const statsString = makeStatsString(characterCount, environmentCount, opponentCount);
-
-    statsEl.textContent = statsString;
-}
-
 function displayCaptions() {
     captionList.textContent = '';
 
@@ -80,6 +74,12 @@ function displayCaptions() {
 
         captionList.append(p);
     }
+}
+
+function displayStats() {
+    const statsString = makeStatsString(characterCount, environmentCount, opponentCount);
+
+    statsEl.textContent = statsString;
 }
   // get user input
   // use user input to update state 
