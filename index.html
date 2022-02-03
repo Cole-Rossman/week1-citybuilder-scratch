@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>Shrek Fight Simulator</title>
 </head>
 
 <body>
@@ -18,49 +18,48 @@
             <img src="./assets/big-logo.png" />
         </div>
     </header>
+        <h1>Shrek Fight Simulator</h1>
     <main>
-        <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
+        <section class="information">
+            <div class="select" id="character">
+                <select id="character-select">
+                    <option value="1">Shrek</option>
+                    <option value="2">Donkey</option>
+                    <option value="3">Fiona</option>
+                    <option value="4">Dragon</option>
+                </select>
+                <img id="character-image" src="./assets/character-1.png">
+            </div>
 
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
+            <div class="select" id="environment">
+                <select id="environment-select">
+                    <option value="1">Swamp</option>
+                    <option value="2">Enchanted Forest</option>
+                    <option value="3">Far Far Away</option>
+                    <option value="4">Tower</option>
+                </select>
+                <img id="environment-image" src="./assets/environment-1.png">
+            </div>
 
+            <div class="select" id="opponent">
+                <select id="opponent-select">
+                    <option value="1">Lord Farquaad</option>
+                    <option value="2">Prince Charming</option>
+                    <option value="3">Fairy Godmother</option>
+                    <option value="4">Rumpelstiltskin</option>
+                </select>
+                <img id="opponent-image" src="./assets/opponent-1.png">
+            </div>
+        </section>
+
+        <section id="caption-section">
+            <h3>Who Will Win?</h3>
+            <input id="caption-input" type="text">
+            <button id="caption-button">Submit</button>
+            <div id="caption-list">
+            </div>
+            <div id="stats">    
+            </div>
         </section>
     </main>
     <footer>
